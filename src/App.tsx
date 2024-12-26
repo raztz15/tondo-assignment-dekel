@@ -7,7 +7,7 @@ function App() {
 
 
   return (
-    <Router>
+    <Router basename='/tondo-assignment-dekel'>
       <Routes>
         <Route path="/" element={<LaunchList />} />
         <Route path="/launch/:id" element={<LaunchDetails />} />
