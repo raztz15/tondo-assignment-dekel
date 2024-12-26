@@ -1,50 +1,27 @@
-# React + TypeScript + Vite
+# SpaceX Launch Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Live preview](https://raztz15.github.io/tondo-assignment-dekel/)
 
-Currently, two official plugins are available:
+<b>SpaceX Launch Explorer</b> is a web application that allows users to explore past SpaceX rocket launches. It provides a user-friendly interface to view detailed information about each launch, including the mission name, launch date, rocket name, and its success status. The app also features a search bar for filtering launches by mission name, sorting options, and pagination for easy navigation through the data.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Project Technologies - 
 
-## Expanding the ESLint configuration
+<img src="https://skillicons.dev/icons?i=react,mui,html,css,vite,vscode&perline=7" />
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation + Running The Application
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone the repository to your local machine:
+   sh
+   git clone https://github.com/raztz15/tondo-assignment-dekel
+   
+2. Open folder:
+   ```sh
+   cd tondo-assignment-dekel
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+3. Download sharing dependencies 
+   ```sh
+   npm i
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+4. Run Project In Local
+   ```sh
+   npm run dev
